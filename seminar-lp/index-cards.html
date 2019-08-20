@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FFEBA Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+      <link href="css/hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"</script>
+      <script src="js/jquery.imgcheckbox.js"></script> 
+      <style>
+          
+          @media only screen and (max-width: 767px)
+h1 {
+    font-size: 24px;
+}
+          
+          .site-wrap{
+              background-color: #ededed;
+          }
+* {
+  box-sizing: border-box;
+}
+          .invalid-feedback {
+              color: ;
+              font-weight: 400;
+          }
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card a {
+  color: inherit;
+}
+.blog-card a:hover {
+  color: #5ad67d;
+}
+.blog-card:hover .photo {
+  -webkit-transform: scale(1.3) rotate(3deg);
+          transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left .2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: .9rem;
+}
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin .3s, opacity .3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+          
+          
+          
+.container input[type="radio"] {
+              height: 22px;
+}         
+.checkbox input[type="radio"] {
+    opacity: 0;
+    height: 22px!important;
+}
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 22px;
+}
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    
+    border: 1px solid;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="radio"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="radio"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="radio"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+
+
+
+</style>
+      
+      
+      
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap" style="background-color:#fff;">
+   
+    
+    <header class="" role=""> 
+    </header>
+
+    <div class="intro-section" id="home-section" style="">
+      
+      <div class="slide-1" style="background-image: url('background-image: url('https://thelearninglab.us/wp-content/uploads/2019/07/event-hero-retirement1.jpg?id=6139');padding-top: 45px;
+    padding-bottom: 45px; background-repeat: no-repeat;
+    background-size: cover;');height: 100%;" data-stellar-background-ratio="0.1">
+        <div class="container">
+            <form method="post" action="https://control.ffeba.com/workshop/AutomationAggregation.php" method="POST"  class="needs-validation was-validated" novalidate data-aos="fade"><input name="redirect_url" id="redirect_url" type="hidden" value="https://www.FFEBA.com/" />
+          <div class="row">
+            <div class="col-12">
+              <div class="row" style="background-image: url('https://thelearninglab.us/wp-content/uploads/2019/07/event-hero-retirement1.jpg?id=6139');padding-top: 45px;
+    padding-bottom: 45px; background-repeat: no-repeat;
+    background-size: cover;">
+                <div class="col-lg-12 mb-4">
+                  <h1 style="text-align: center;font-size:22px;line-height: 32px;">Join Us For A Complimentary Estate Planning & Social Security Workshop in Battle Creek</h1>
+                    <p class="mb-4" style="text-align: center">
+                        
+                        <span style="text-align: center; font-family: Raleway, sans-serif; color: #ffffff; font-size: 18px; font-weight: 400;">Hosted by</span>
+                    <br>
+                        <span style="text-align: center; color: #ffffff; font-size: 24px; font-weight: bold; font-family: Raleway, sans-serif;">The Learning Lab</span>
+                        <br>
+                        
+                        <span style="font-size:12px;font-weight:600;">“Authentic, Educational Retirement Resources – Brought To You”</span>
+                    </p>
+                    
+                   
+                
+                    
+  </div>
+                    <!--Grid row
+<div class="row">
+
+
+  <div class="col-md-6 mb-4">
+
+    
+    <span class="hvr-float"><a href="#submissionForm" class="preferred-time-a" data-toggle="tooltip" data-placement="top" title="Click Here to Register For Time A"><div class="card card-cascade narrower">
+
+     
+      <div class="view view-cascade gradient-card-header blue-gradient">
+        <h5 class="mb-0" style="text-align: center;color: #000;padding:5px;">Event Title</h5>
+          <h6 style="text-align: center;color: #000;padding:5px;">Event Time A</h6>
+      </div>
+      
+
+    
+      <div class="card-body card-body-cascade text-center">
+
+        
+        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 100px">
+            <h3 style="color:#000;">August</h3>
+            <h2 style="font-size:5rem;color:#000;">22</h2>
+        </div>
+
+      </div>
+     
+
+    </div>
+      </a>
+      </span>
+  
+
+  </div>
+  
+
+
+  <div class="col-md-6 mb-4">
+
+    
+     <span class="hvr-float">
+         <a href="#submissionForm" class="preferred-time-b" data-toggle="tooltip" data-placement="top" title="Click Here to Register For Time B">
+        <div class="card card-cascade narrower">
+
+      
+      <div class="view view-cascade gradient-card-header">
+        <h5 class="mb-0" style="text-align: center;color: #000;padding:5px;">Event Title</h5>
+          <h6 style="text-align: center;color: #000;padding:5px;">Event Time B</h6>
+      </div>
+     
+
+    
+     <div class="card-body card-body-cascade text-center">
+
+       
+       <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 100px">
+            <h3 style="color:#000;">August</h3>
+            <h2 style="font-size:5rem;color:#000;">22</h2>
+        </div>
+
+
+      </div>
+    
+
+    </div>
+   
+</a>
+      </span>
+  </div>
+ 
+
+</div>
+-->
+                  </div>
+  <div class="row" style="padding-bottom: 0px!important;">
+      <h4 style="text-align: left; background-color: #187a79;width: 100%;height: 100%; padding-top:5px;padding-bottom: 5px;margin-bottom:0px;padding-left:15px;padding-right:15px;font-weight:600;font-size:16px;text-align: center;">Wednesday, August 28th – 6:30 pm</h4>
+                    <p class="mb-4" style="text-align: center">
+                </div>
+                
+  <div class="row">
+                <div class="form-bg col-lg-8 ">
+                    <h4 style="color:#fff;text-align:left;margin-bottom:2rem; font-size: 16px;color: #313131;letter-spacing: 0;line-height: 1.3em;font-weight:600;" id="submissionForm">Courtyard by Marriott Battle Creek
+                        <br>
+                        <span style="font-size:12px;color: #313131;letter-spacing: 0;line-height: 1.3em;">12891 Harper Village Dr, Battle Creek, MI 49014</span>
+                        <br>
+                        <span style="font-family: 'Raleway', sans-serif; font-size: 12px;"><strong><span style="color: #187a79;">Note: </span><span style="color: #187a79;">Registration Is Required for This Event</span></strong></span>
+                    
+                    
+                    </h4>
+                  
+              <div class="form-group row">
+                <div class="col-md-6" style="padding-bottom:15px;">
+                    <label style="color:#000;font-weight: 600">First Name <span style="color:#c50e13;">*</span></label>
+                  <input name="first_name" id="first_name" type="text" class="form-control" placeholder="First name" required/>
+                    <div class="invalid-feedback">Please enter your first name</div>
+                </div>
+                      
+                <div class="col-md-6">
+                    <label style="color:#000;font-weight: 600">Last Name <span style="color:#c50e13;">*</span></label>
+                  <input name="last_name" id="last_name" type="text" class="form-control" placeholder="Last name" required/>
+                    <div class="invalid-feedback">Please enter your last name</div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                    <label style="color:#000;font-weight: 600">Email <span style="color:#c50e13;">*</span></label>
+                  <input name="email1" id="email1" type="email" class="form-control" placeholder="Email" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                    <label style="color:#000;font-weight: 600">Phone <span style="color:#c50e13;">*</span></label>
+                    <input name="best_phone_c" id="best_phone_c" type="text" pattern="[1-9]{1}[0-9]{9}" placeholder="Phone Number" class="form-control" required/> 
+                    <div class="invalid-feedback">10 digit phone number, cell phone for a text reminder is preferred</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <input name='preferred_time_c' id='preferred_time_a' type='radio' value='7338ce33-e70d-648e-1756-5d362cd721c3' class='form-control' required/>
+                    <label style='color:#000;text-align: center;'>10:30 am - 1:00 pm</label><div class='invalid-feedback'>Please select one of these event times</div>
+                </div>
+                  <div class="col-md-6">
+                      
+                      <input name='preferred_time_c' id='preferred_time_b' type='radio' value='9f34aef8-00ed-7d28-82fb-5d362cdba844' class='form-control' style='text-align: center' required/><label style='color:#000;text-align: center;'>2:30 pm - 5:00 pm</label><div class='invalid-feedback'>Please select one of these event times</div>
+                  </div>
+              </div>
+                      <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="seeAnotherField" style="color:#fff;">Total Attendees(Including Yourself): </label>
+                                            <br>
+                                                <select name="nochildren" id="seeAnotherField" class="form-control col-lg">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                    </select>
+                </div>
+              </div>
+                      <!--<div class="form-group row" id="otherFieldGroupDiv">
+                <div class="col-md-12">
+                    <label for="otherField1" style="color:#fff;">Attendee 1</label>
+                  <input name="text" id="otherField1" type="text" class="form-control" placeholder="Name" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>
+                    <div class="form-group row" id="otherFieldGroupDiv">
+                <div class="col-md-12">
+                    <label for="otherField1" style="color:#fff;">Attendee 2</label>
+                  <input name="text" id="otherField1" type="text" class="form-control" placeholder="Name" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>
+                    <div class="form-group row" id="otherFieldGroupDiv">
+                <div class="col-md-12">
+                    <label for="otherField1" style="color:#fff;">Attendee 3</label>
+                  <input name="text" id="otherField1" type="text" class="form-control" placeholder="Name" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>
+                    <div class="form-group row" id="otherFieldGroupDiv">
+                <div class="col-md-12">
+                    <label for="otherField1" style="color:#fff;">Attendee 4</label>
+                  <input name="text" id="otherField1" type="text" class="form-control" placeholder="Name" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>
+                    <div class="form-group row" id="otherFieldGroupDiv">
+                <div class="col-md-12">
+                    <label for="otherField1" style="color:#fff;">Attendee 5</label>
+                  <input name="text" id="otherField1" type="text" class="form-control" placeholder="Name" required/>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+              </div>-->
+                    <div class="form-group row">
+                <div class="col-md-6">
+                  
+                  <input class="btn btn-primary button" style="align-content: center; padding:.75rem 2rem;" align="center" name="Submit" type="submit" value="RESERVE YOUR SEAT TODAY" />
+                </div>
+              </div>
+                    <div class="wpb_text_column wpb_content_element ">
+		<div class="">
+			<h4 style="color: #000000; font-family: Raleway, sans-serif;">Who Should Attend?</h4>
+<p><span style="font-size: 16px; font-family: Raleway, sans-serif; line-height: 28px;color:#000000;">Designed specifically for adults at a stage in life where complex decisions can have a profound impact, this educational class will provide insightful information on today’s latest legislation, how Social Security ties into other facets of your retirement and strategies to create your own tax-efficient retirement.</span></p>
+
+		</div>
+                        <div class="">
+		<div class="">
+			<ul style="list-style-type: square; font-size:16px;padding-top: 10px; font-family: Raleway, sans-serif;color: #000000;">
+<li>How an Estate Plan can help maximize the value of assets passed on to your beneficiaries and lower the tax burden on your estate.</li>
+<li>Advantages for married couples who coordinate the timing of their benefits.</li>
+<li>How Social Security income is taxed and ways for you to potentially keep more in retirement.</li>
+<li>Risk planning and different retirement strategies to maximize returns in retirement.</li>
+<li>What you need to know about the most crucial Estate documents – Last Will &amp; Testament, different types of Living Wills, Powers of Attorney, Trusts and more.</li>
+</ul>
+
+		</div>
+	</div>
+           <div class="">
+		<div class="">
+			<h5 style="text-align: left; font-size: 13px; color: #187a79; font-family: Raleway, sans-serif;"><span style="color: #000000;"><strong>These workshops are strictly educational and do not promote any products or companies. A ‘Hear It. See It. Write It.” teaching method makes it easy for you to understand, retain and profit from the information covered!</strong></span></h5>
+
+		</div>
+	</div>
+                        <div class="vc_empty_space" style="height: 20px"><span class="vc_empty_space_inner"></span></div>
+	</div>
+              
+                    
+  
+  
+<input name="campaign_id" id="campaign_id" type="hidden" value="1be4b4f7-969a-9ce9-16b0-5ceeb9afe9b3" /> 
+                                <input name="assigned_user_id" id="assigned_user_id" type="hidden" value="1" /> 
+                                <input name="moduleDir" id="moduleDir" type="hidden" value="Leads" />
+                  </div>
+      <div class="col-lg-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img data-brackets-id="6629" width="100%" height="" src="https://thelearninglab.us/wp-content/uploads/2019/08/Courtyard-by-Marriott-Battle-Creek-v3-small-1.jpg" sizes="(max-width: 500px) 100vw, 500px"></div>
+		</figure>
+	</div>
+<div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+<div class="wpb_gmaps_widget wpb_content_element">
+		<div class="wpb_wrapper">
+		<div class="wpb_map_wraper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11810.134354632817!2d-85.1718183!3d42.2671319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3c84d3fb0d05e83!2sCourtyard+by+Marriott+Battle+Creek!5e0!3m2!1sen!2sus!4v1565726095828!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>		</div>
+	</div>
+</div>
+<div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+</div></div></div>
+                
+                
+                
+              
+              
+                </div> </div></div></form>
+            <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+<p style="font-size: 12px;color: #7c7c7c;text-align: center;font-family:Raleway;font-weight:400;font-style:normal; margin-bottom: 17px;" class="vc_custom_heading">Copyright © 2019 The Learning Lab | All Right Reserved | Our seminars are for educational purposes only. No investments or financial products will be promoted at the event. However, our speakers may offer a private consultation. Your attendance at our seminar in no way obligates you to engage with the speaker for any service. See FAQs for complete information. Also review our Privacy Policy.</p><div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+    
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+            <script src="js/jquery.imgcheckbox.js"></script> 
+
+
+  
+  <script src="js/main.js"></script>
+      <script type="text/javascript">
+      $("#seeAnotherFieldGroup").change(function() {
+  if ($(this).val() == "[5]") {
+    $('#otherFieldGroupDiv').show();
+    $('#otherField1').attr('required', '');
+    $('#otherField1').attr('data-error', 'This field is required.');
+    $('#otherField2').attr('required', '');
+    $('#otherField2').attr('data-error', 'This field is required.');
+  } else {
+    $('#otherFieldGroupDiv').hide();
+    $('#otherField1').removeAttr('required');
+    $('#otherField1').removeAttr('data-error');
+    $('#otherField2').removeAttr('required');
+    $('#otherField2').removeAttr('data-error');
+  }
+});
+$("#seeAnotherFieldGroup").trigger("change");
+      </script>
+      
+      <script type="text/javascript">
+      
+			$(document).ready(function(){
+				var f = $("header img").imgCheckbox({
+					"styles": {
+						"span.imgCheckbox img": {
+							"border-radius": "6px"
+						},
+						"span.imgCheckbox.imgChked img": {
+							"transform": "scale(0.95)",
+						},
+						"span.imgCheckbox": {
+							"border": "none",
+						}
+					},
+					"checkMarkSize": "50px",
+					"checkMarkImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMzQ2LjM4NCkiPjxwYXRoIGQ9Ik0zMiAzNDYuMzg0YTMyIDMyIDAgMCAwLTMyIDMyIDMyIDMyIDAgMCAwIDMyIDMyIDMyIDMyIDAgMCAwIDMyLTMyIDMyIDMyIDAgMCAwLTMyLTMyem0yMS4yNTYgMTAuMzI3bC0yNC40NiA0MC44OTNMOS41IDM3NS4yMTNsMTcuNjkzIDkuNjA1IDI2LjA2LTI4LjEwN3oiIGZpbGw9IiNjODAwMDAiIGZpbGwtb3BhY2l0eT0iLjc4NCIvPjxwYXRoIGQ9Ik05LjUwMiAzNzUuMjEzbDE5LjI5NCAyMi4zOSAyNC40Ni00MC44OTMtMjYuMDYgMjguMTA3eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4="
+				});
+				$(".exampleone img").imgCheckbox();
+				$(".exampletwo img").imgCheckbox({
+				    "styles": {
+				        "span.imgCheckbox.imgChked img": {
+				            "filter": "blur(5px)",
+				            "-webkit-filter": "blur(5px)",
+				            "transform": "scale(0.9)"
+				        }
+				    }
+				});
+				$(".exampleone").submit(function() {
+					$("body").css({"opacity": 0}).animate({"opacity": 1}, "fast");
+					$(".formoutput").text($(this).serialize());
+					return false;
+				})
+				$(window).scroll(function() {
+				if ($(this).scrollTop() > window.innerHeight -1){
+				    $('#headermenu').addClass("scrollDown");
+				  }
+				  else{
+				    $('#headermenu').removeClass("scrollDown");
+				  }
+				});
+			})
+			
+      </script>
+      
+      <script type="text/javascript">
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+      </script>
+      
+      <script type="text/javascript">
+$(document).ready(function(){
+    $(".preferred-time-a").click(function(){
+        $("#preferred_time_a").prop("checked", true);
+    });
+    $(".preferred-time-b").click(function(){
+        $("#preferred_time_b").prop("checked", true);
+    });
+});
+</script>
+    
+    <script>
+// JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+          </div>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
